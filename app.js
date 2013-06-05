@@ -12,7 +12,7 @@ var app = connect()
 
 		res.writeHead(200, {"Content-Type": "text/html"});
 
-		var blog = new Tumblr('jdandstacey.tumblr.com', 'HSb29TjUdYgtOtvrcbXiUoVTsaImmu3rARtuvBPqoqZaLQTPjC');
+		var blog = new Tumblr('ethiopiansummers.tumblr.com', 'HSb29TjUdYgtOtvrcbXiUoVTsaImmu3rARtuvBPqoqZaLQTPjC');
 		blog.posts({limit: 1}, function(error, response) {
 			if (error) {
 				throw new Error(error);

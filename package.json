@@ -13,6 +13,10 @@
     "type": "git",
     "url": "https://bitbucket.org/jdmaresco/triplejs.git"
   },
+  "engine": {
+        "node": "0.8.16",
+        "npm": "1.1.69" 
+  },
   "dependencies" : {
     "http-server"   :  "0.5.3",
     "tumblr"        :  "0.1.1",

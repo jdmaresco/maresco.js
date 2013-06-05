@@ -3,7 +3,8 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 img { -ms-interpolation-mode: bicubic; }
 
 body { 
-	font: 18px/30px Source Sans Pro; 
+	font-family: 'Cabin', sans-serif;
+	font: 24px/32px 'Cabin';
 	color: #222222;
 }
 

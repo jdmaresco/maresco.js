@@ -1,0 +1,118 @@
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+img { -ms-interpolation-mode: bicubic; }
+
+body { font: 22px/34px Source Sans Pro; }
+
+::-moz-selection { background: white; color: black; text-shadow: none; }
+::selection { background: white; color: black; text-shadow: none; }
+
+a:link {
+	text-decoration:none;
+	color: inherit;
+}
+a:visited {
+	text-decoration:none;
+	color: inherit;
+}
+a:hover {
+	text-decoration:underline;
+	color: inherit;
+}
+a:active {
+	text-decoration:underline;
+	color: inherit;
+}
+img { vertical-align: middle;}
+
+.column {
+	position: relative;
+	width: 30%;
+	height: 100%;
+	background-color: #fff;
+	border-style: dotted;
+	border-width: 0 2 0 0;
+	border-color: #ccc;
+	height: 100%;
+}
+
+.header { background-color: #444; }
+
+.site-title { color: #aaa; }
+
+.about-me {	color: #fff;  }
+
+#right-bar {
+	margin-left: 250px;
+}
+
+#post-collection {	
+}
+
+.post-header {
+	font: 800 1.2em/1.4em Source Sans Pro;
+	line-height: 24px;
+	height: 24px;
+}
+.post-title {
+	font: 800 1.2em/1.4em Source Sans Pro;
+	color: #003366;
+}
+.post-paragraph {
+	font: 300 1em/1.5em Source Sans Pro;
+}
+
+@media print {
+	img { max-width: 100% !important; }
+}
+
+.theCircle {
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	-border-radius: 999px;
+	width: 100px;
+	height: 100px;
+	background: #ddd;
+	border: 5px solid #000;
+	text-align: center;
+	margin: 5 auto;
+	font: 800 16px/20px Source Sans Pro;
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+	.theCircle {
+		visibility: hidden;
+	}
+
+	#left-bar {
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		background-color: #fff;
+		border-style: dotted;
+		border-width: 0 0 2 0;
+		border-color: #ccc;
+		height: 220px;
+		text-align: center;
+	}
+		.about-me { 
+			top: 0px;
+			margin: auto;
+			display: inline;
+			text-align: center;
+		}
+
+	#right-bar {
+		margin: 240 10 10 10;
+	}
+
+		.post-title {
+		}
+		.post-paragraph {
+		}
+
+}

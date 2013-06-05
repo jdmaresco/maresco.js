@@ -1,0 +1,22 @@
+{
+  "name": "marescoweb",
+  "version": "0.1.0",
+  "author": "JD Maresco <jdmaresco@gmail.com>",
+  "description": "A two-column page that pulls the latest blog post from two blogs.",
+  "contributors": [ 
+    {
+      "name": "JD Maresco",
+      "email": "jdmaresco@gmail.com"
+    } 
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/jdmaresco/triplejs.git"
+  },
+  "dependencies" : {
+    "http-server"   :  "0.5.3",
+    "tumblr"        :  "0.1.1",
+    "mu2"           :  "0.5.19",
+    "connect"       :  "2.7.11"
+  }
+}

@@ -1,0 +1,11 @@
+// RULES
+// Enter the date of your post on a separate line, before each post in the form MM-DD-YYYY (e.g. 03-26-2013)
+// Each line of text after the date will be a paragraph in the post
+// The end.
+//
+//
+
+
+You're special
+03-26-2013
+You're lucky because you are seeing a sneak preview of my new blog. Coming hella soon, like in April '13. You won't be disappointed. I'm still working on building a text-based CMS so I can run this thing off of Dropbox.

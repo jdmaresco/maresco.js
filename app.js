@@ -45,7 +45,7 @@ var app = connect()
 
 		});
 	})
-	.listen(3000);
+	.listen(process.env.PORT || 5000);
 
 // Terminal output
 console.log("Server up");

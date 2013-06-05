@@ -2,7 +2,10 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 
 img { -ms-interpolation-mode: bicubic; }
 
-body { font: 22px/34px Source Sans Pro; }
+body { 
+	font: 18px/30px Source Sans Pro; 
+	color: #222222;
+}
 
 ::-moz-selection { background: white; color: black; text-shadow: none; }
 ::selection { background: white; color: black; text-shadow: none; }
@@ -39,7 +42,6 @@ img { vertical-align: middle;}
 .header { background-color: #444; }
 
 .site-title { color: #aaa; }
-
 .about-me {	color: #fff;  }
 
 #right-bar {

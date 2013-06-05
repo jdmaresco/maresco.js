@@ -1,6 +1,10 @@
 {
   "name": "marescoweb",
   "version": "0.1.0",
+  "engine": {
+    "node": "0.8.16",
+    "npm": "1.1.69" 
+  },
   "author": "JD Maresco <jdmaresco@gmail.com>",
   "description": "A two-column page that pulls the latest blog post from two blogs.",
   "contributors": [ 
@@ -12,10 +16,6 @@
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/jdmaresco/triplejs.git"
-  },
-  "engine": {
-        "node": "0.8.16",
-        "npm": "1.1.69" 
   },
   "dependencies" : {
     "http-server"   :  "0.5.3",

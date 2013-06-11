@@ -2,8 +2,8 @@
   "name": "marescoweb",
   "version": "0.1.0",
   "engine": {
-    "node": "0.8.16",
-    "npm": "1.1.69" 
+    "node": "0.8.x",
+    "npm": "1.1.x" 
   },
   "author": "JD Maresco <jdmaresco@gmail.com>",
   "description": "A two-column page that pulls the latest blog post from two blogs.",

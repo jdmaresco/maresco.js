@@ -47,11 +47,21 @@ img { vertical-align: middle;}
 .post-tweet {
 	font: 300 1.0em/1.2em Source Sans Pro;
 	height:80px;
-
 }
 .post-title {
 	font: 700 1.5em/2.0em Source Sans Pro;
 	color: #003366;
+}
+.post-subtitle {
+	font: 700 1.0em/2.0em Source Sans Pro;
+	color: #003366;
+	margin-bottom: 1em;
+}
+.post-instructional {
+	font: 300 0.7em/0.8em Source Sans Pro;
+	color: #222; 
+	padding: 0.4em;
+	display:none;
 }
 .post-paragraph {
 	font: 300 1.2em/1.4em Source Sans Pro;

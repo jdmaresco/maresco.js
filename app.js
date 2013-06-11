@@ -6,6 +6,7 @@ var _ = require('underscore');
 var h = require('handlebars');
 var vacuum = require('./vacuum').vacuum;
 var fs = require('fs');
+var moment = require('moment');
 
 _.bindAll(vacuum);
 
@@ -23,12 +24,14 @@ var start = function() {
 			vacuum.storedData.blog1PostText = data.body;
 			vacuum.storedData.blog1PostTitle = data.title;
 			vacuum.storedData.blog1PostURL = data.short_url;
+			vacuum.storedData.blog1PostDate = moment(JSON.stringify(data.date).substring(1,11), "YYYY-MM-DD").format("dddd, MMMM Do YYYY");
 
 			vacuum.getStoredData('maresco', function(data) {
 				data = JSON.parse(data);
 				vacuum.storedData.blog2PostText = data.body;
 				vacuum.storedData.blog2PostTitle = data.title;
 				vacuum.storedData.blog2PostURL = data.short_url;
+				vacuum.storedData.blog2PostDate = moment(JSON.stringify(data.date).substring(1,11), "YYYY-MM-DD").format("dddd, MMMM Do YYYY");
 
 				vacuum.getStoredData('johndavidm', function(data) {
 					vacuum.storedData.tweet2 = data;
@@ -40,9 +43,11 @@ var start = function() {
 				                Blog1PostTitle: vacuum.storedData.blog1PostTitle,
 				                Blog1PostText: vacuum.storedData.blog1PostText,
 				                Blog1PostURL: vacuum.storedData.blog1PostURL,
+				                Blog1PostDate: vacuum.storedData.blog1PostDate,
 				                Blog2PostTitle: vacuum.storedData.blog2PostTitle,
 				                Blog2PostText: vacuum.storedData.blog2PostText,
 				                Blog2PostURL: vacuum.storedData.blog2PostURL,
+   				                Blog2PostDate: vacuum.storedData.blog2PostDate,
 				                Tweet1: vacuum.storedData.tweet1,
 				                Tweet2: vacuum.storedData.tweet2
 				        });

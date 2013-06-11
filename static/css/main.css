@@ -7,6 +7,7 @@ img:not(.z) {
 
 body { 
 	color: #222222;
+	background-image:url('../img/light_wool.png');
 }
 
 ::-moz-selection { background: white; color: black; text-shadow: none; }

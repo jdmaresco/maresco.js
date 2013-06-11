@@ -1,6 +1,6 @@
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-img:not(.z) { 
+img:not(.tweet-icon) { 
 	-ms-interpolation-mode: bicubic; 
 	width: 100%;
 }
@@ -32,8 +32,14 @@ a:active {
 img { vertical-align: middle;}
 
 .header { 
-	font: 300 1.5em/1.8em Source Sans Pro;
+	font: 300 1.5em/1.5em Source Sans Pro;
 	background-color: #444; 
+	padding:0 5px 0 5px;
+}
+@media ( max-width : 767px ) {
+	.header {
+		font: 300 1.5em/1.2em Source Sans Pro;
+	}
 }
 
 .site-title { color: #aaa; }
@@ -47,10 +53,19 @@ img { vertical-align: middle;}
 }
 .post-tweet {
 	font: 300 1.0em/1.2em Source Sans Pro;
-	height:80px;
+	height:65px;
+	border-bottom:1px dotted #AAAAAA;
 }
+.tweet-icon {
+	width: 15px;
+	height: auto;
+}
+
 .post-title {
-	font: 700 1.5em/2.0em Source Sans Pro;
+	margin-top: 1.0em;
+}
+.post-title > .post-title-text {
+	font: 700 1.5em/1.5em Source Sans Pro;
 	color: #003366;
 }
 .post-subtitle {

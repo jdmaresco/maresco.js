@@ -21,6 +21,8 @@
     "http-server"   :  "0.5.3",
     "tumblr"        :  "0.1.1",
     "mu2"           :  "0.5.19",
-    "connect"       :  "2.7.11"
+    "connect"       :  "2.7.11",
+    "underscore"    :  "1.4.4",
+    "handlebars"    :  "1.0.12"
   }
 }

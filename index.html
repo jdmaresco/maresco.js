@@ -18,7 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/simplegrid.css">
+	<link rel="stylesheet" href="css/responsive-gs-24col.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/ie.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FONT
@@ -50,29 +52,33 @@
 
 </head>
 <body>
+<div class='container'>
+	<div class = "row header">
+			<span class="site-title">&nbsp;John David & Stacey <a href="http://www.mares.co/">Mares.co</a></span> &nbsp;&nbsp;<span class='about-me'>We are on the go. Here are our latest posts.</span>
+	</div>
+	<div class = "row">
+		<div class="col span_12">
+			<p class="post-header">Stacey</p>
+			<p class="post-tweet"><a href="http://www.twitter.com/staceynicolem"><img class="z" src="img/twitter.png"></a> &nbsp;{{Tweet1}}</p>
+			<p class="post-title"><a href="{{Blog1PostURL}}">{{Blog1PostTitle}}</a></p>
+			<div class="post-paragraph">{{{Blog1PostText}}}</div>
+		</div>
+		<div class="col span_12">
+			<p class="post-header clr">John David</p>
+			<p class="post-tweet"><a href="http://www.twitter.com/staceynicolem"><img class="z" src="img/twitter.png"></a>&nbsp;{{Tweet2}}</p>
+			<p class="post-title"><a href="{{Blog2PostURL}}">{{Blog2PostTitle}}</a></p>
+			<div class="post-paragraph">{{{Blog2PostText}}}</div>
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col span_12">
 
-<div class = "grid grid-pad">
-	<div class="col-1-1 header">
-		<span class="site-title">John David & Stacey <a href="http://www.mares.co/">Mares.co</a></span> &nbsp;&nbsp;<span class='about-me'>We are on the go. Here is some of the latest.</span>
+		</div>
+		<div class="col span_12">
+
+		</div>
 	</div>
 </div>
-<div class = "grid grid-pad">
-	<div class="col-1-2">
-		<div class="post">
-			<p class="post-header">Stacey <a href="http://www.twitter.com/staceynicolem"><img class="z" src="img/twitter.png"></a></p>
-			<p class="post-title"><a href="{{Blog1PostURL}}">{{Blog1PostTitle}}</a></p>
-			<p class="post-paragraph">{{{Blog1PostText}}}</p>
-		</div>
-	</div>
-	<div class="col-1-2">
-		<div class="post">
-			<p class="post-header">John David <a href="http://www.twitter.com/johndavidm"><img class="z" src="img/twitter.png"></a></p>
-			<p class="post-title"><a href="{{Blog2PostURL}}">{{Blog2PostTitle}}</a></p>
-			<p class="post-paragraph">{{{Blog2PostText}}}</p>
-		</div>
-	</div>
-
-<div>
 </body>
 
 </html>

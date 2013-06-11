@@ -6,7 +6,6 @@ img:not(.z) {
 }
 
 body { 
-	font: 300 24px/32px Source Sans Pro;
 	color: #222222;
 }
 
@@ -31,93 +30,36 @@ a:active {
 }
 img { vertical-align: middle;}
 
-.column {
-	position: relative;
-	width: 30%;
-	height: 100%;
-	background-color: #fff;
-	border-style: dotted;
-	border-width: 0 2 0 0;
-	border-color: #ccc;
-	height: 100%;
+.header { 
+	font: 300 1.5em/1.8em Source Sans Pro;
+	background-color: #444; 
 }
-
-.header { background-color: #444; }
 
 .site-title { color: #aaa; }
 .about-me {	color: #fff;  }
-
-#right-bar {
-	margin-left: 250px;
-}
 
 #post-collection {	
 }
 
 .post-header {
-	font: 800 1.2em/1.4em Source Sans Pro;
-	line-height: 24px;
-	height: 24px;
+	font: 700 1.5em/2.0em Source Sans Pro;
+}
+.post-tweet {
+	font: 300 1.0em/1.2em Source Sans Pro;
+	height:80px;
+
 }
 .post-title {
-	font: 800 1.2em/1.4em Source Sans Pro;
+	font: 700 1.5em/2.0em Source Sans Pro;
 	color: #003366;
 }
 .post-paragraph {
-	font: 300 1em/1.5em Source Sans Pro;
+	font: 300 1.2em/1.4em Source Sans Pro;
+}
+.post-paragraph p {
+	margin-bottom: 0.8em;
 }
 
 @media print {
 	img { max-width: 100% !important; }
-}
-
-.theCircle {
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	-border-radius: 999px;
-	width: 100px;
-	height: 100px;
-	background: #ddd;
-	border: 5px solid #000;
-	text-align: center;
-	margin: 5 auto;
-	font: 800 16px/20px Source Sans Pro;
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
-	.theCircle {
-		visibility: hidden;
-	}
-
-	#left-bar {
-		position: fixed;
-		width: 100%;
-		top: 0px;
-		background-color: #fff;
-		border-style: dotted;
-		border-width: 0 0 2 0;
-		border-color: #ccc;
-		height: 220px;
-		text-align: center;
-	}
-		.about-me { 
-			top: 0px;
-			margin: auto;
-			display: inline;
-			text-align: center;
-		}
-
-	#right-bar {
-		margin: 240 10 10 10;
-	}
-
-		.post-title {
-		}
-		.post-paragraph {
-		}
-
 }

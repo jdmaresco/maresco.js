@@ -39,6 +39,7 @@ img { vertical-align: middle;}
 @media ( max-width : 767px ) {
 	.header {
 		font: 300 1.5em/1.2em Source Sans Pro;
+		text-align: center;
 	}
 }
 

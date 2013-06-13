@@ -48,28 +48,50 @@ img { vertical-align: middle;}
 #post-collection {	
 }
 
+#mobile-links {
+	display:none;
+
+}
+#mobile-links > a {
+	margin: 0 10px 0 10px;
+	font: 300 1.5em/2.0em Source Sans Pro;
+}
+@media ( max-width : 767px ) {
+	#mobile-links {
+		display: block;
+		margin: 0 0 20px 0;
+		font: 300 0.8em/2.0em Source Sans Pro;
+		border-bottom:1px dotted #000;
+		background-color: #DDD;
+		text-align: center; 
+	}
+}
 .post-header {
 	font: 700 1.5em/2.0em Source Sans Pro;
 }
 .post-tweet {
 	font: 300 1.0em/1.2em Source Sans Pro;
-	height:65px;
 	border-bottom:1px dotted #AAAAAA;
+	padding: 0 0 10px 0;
+}
+.post-tweet > a {
+	margin: 0 10px 0 0;
 }
 .tweet-icon {
 	width: 15px;
 	height: auto;
+	margin: 0 5px 0 0;
 }
 
 .post-title {
 	margin-top: 1.0em;
 }
 .post-title > .post-title-text {
-	font: 700 1.5em/1.5em Source Sans Pro;
+	font: 400 1.5em/1.5em Source Sans Pro;
 	color: #003366;
 }
 .post-subtitle {
-	font: 700 1.0em/2.0em Source Sans Pro;
+	font: 300 1.0em/1.2em Source Sans Pro;
 	color: #003366;
 	margin-bottom: 1em;
 }

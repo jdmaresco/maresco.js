@@ -33,11 +33,11 @@ var start = function() {
 				vacuum.storedData.blog2PostURL = data.short_url;
 				vacuum.storedData.blog2PostDate = moment(JSON.stringify(data.date).substring(1,11), "YYYY-MM-DD").format("dddd, MMMM Do YYYY");
 
-				vacuum.getStoredData('johndavidm', function(data) {
+				/*vacuum.getStoredData('johndavidm', function(data) {
 					vacuum.storedData.tweet2 = data;
 
 					vacuum.getStoredData('staceynicolem', function(data) {
-						vacuum.storedData.tweet1 = data;
+						vacuum.storedData.tweet1 = data;  						TWITTER API RETIRED, **TODO**	*/
 
 				        var pageData = vacuum.template({
 				                Blog1PostTitle: vacuum.storedData.blog1PostTitle,
@@ -48,13 +48,13 @@ var start = function() {
 				                Blog2PostText: vacuum.storedData.blog2PostText,
 				                Blog2PostURL: vacuum.storedData.blog2PostURL,
    				                Blog2PostDate: vacuum.storedData.blog2PostDate,
-				                Tweet1: vacuum.storedData.tweet1,
-				                Tweet2: vacuum.storedData.tweet2
+				                //Tweet1: vacuum.storedData.tweet1,
+				                //Tweet2: vacuum.storedData.tweet2
 				        });
 				        res.write(pageData);
 				        res.end();
-					});
-		    	});
+					//});
+		    	//});								
 		    });
         });
 	})
@@ -83,9 +83,9 @@ var dataPoll = function() {
 	for (var i in vacuum.blogs) {
 		vacuum.checkBlog(i);
 	};
-	for (var j in vacuum.twitterHandles) {
+	/*	for (var j in vacuum.twitterHandles) {
 		vacuum.checkTwitter(j);
-	};
+	};									TWITTER API v1 RETIRED **TODO**		*/
 };
 
 exports.start = start;

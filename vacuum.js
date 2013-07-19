@@ -7,7 +7,7 @@ var vacuum = {
 		'ethiopiansummers.tumblr.com',
 		'maresco.tumblr.com'
 	],
-	twitterHandles	: 	[
+	twitterHandles	: 	[		/* Twitter read API changed, not functioning */
 		'staceynicolem', 
 		'johndavidm'
 	],
@@ -30,9 +30,10 @@ var vacuum = {
 	checkBlog: function(id) {
 		console.log('Checking for new blog post from ' + this.blogs[id]);
 		var blog = new Tumblr(this.blogs[id], this.tumblrKey);
-		blog.posts({limit: 1}, this.storeBlogPost);
+		blog.posts({}, this.storeBlogPost);
 	},
-	checkTwitter: function(id) {
+	checkTwitter: function(id) {		/* Twitter read API changed, not using this */
+
 		console.log('Checking for new tweet from ' + this.twitterHandles[id]);
 		https.get('https://api.twitter.com/1/statuses/user_timeline/'+this.twitterHandles[id]+'.json?count=1&include_rts=1&callback=?', function(res){
 			res.setEncoding('utf8');

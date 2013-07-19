@@ -11,7 +11,7 @@ var vacuum = {
 		'staceynicolem', 
 		'johndavidm'
 	],
-	tumblrKey		: 	'HSb29TjUdYgtOtvrcbXiUoVTsaImmu3rARtuvBPqoqZaLQTPjC',
+	tumblrKey		: 	'########',
 	storedData		:	[],
 	getStoredData: function(file, callback) {
 		fs.readFile(file + '.txt', 'utf-8', function(err, data) {
